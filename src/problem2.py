@@ -240,7 +240,7 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-        
+
     def return_doubled_triangle(self):
         """
         What comes in:
