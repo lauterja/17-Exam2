@@ -3,8 +3,8 @@ Exam 2, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Jacob Lauteri.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
 import time
@@ -13,7 +13,7 @@ import testing_helper
 
 
 ###############################################################################
-# TODO: 2.  READ the   Point   class defined below.
+# DONE: 2.  READ the   Point   class defined below.
 #  Note especially its methods:
 #    clone
 #    distance_from
@@ -27,6 +27,7 @@ class Point(object):
         """ Sets instance variables  x  and  y  to the given coordinates. """
         self.x = x
         self.y = y
+
 
     def __repr__(self):
         """
@@ -186,7 +187,9 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-
+        perimeter = len(self.a) +len(self.b) + len(self.c)
+        S = (1/2) * perimeter
+        area = (S * (S - len(self.a) * (S - len(self.b) * (S - len(self.c)))))
     def bigger_triangle(self, triangle2):
         """
         What comes in:
