@@ -212,7 +212,12 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-
+        triangle1 = area(triangle1)
+        triangle2 = area(triangle2)
+        if triangle1 > triangle2:
+            return True
+        else:
+            return False
     def shrink_or_expand(self, f):
         """
          What comes in:
@@ -235,7 +240,7 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
-
+        
     def return_doubled_triangle(self):
         """
         What comes in:
